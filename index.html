@@ -1,0 +1,486 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Saravanampatti — Colleges, Hospitals & Medical Listings</title>
+  <style>
+    :root{
+      --bg:#f6f7fb;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent:#0b5fff;
+      --accent-dark:#0846c7;
+      --gap:16px;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg),#eef2ff);
+      color:#111827;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:24px;
+    }
+    .container{
+      max-width:1100px;
+      margin:0 auto;
+    }
+    header{
+      display:flex;
+      gap:16px;
+      align-items:center;
+      margin-bottom:20px;
+    }
+    header .brand{
+      display:flex;
+      gap:12px;
+      align-items:center;
+    }
+    .logo{
+      width:64px;height:64px;border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),var(--accent-dark));
+      box-shadow:0 6px 18px rgba(11,95,255,0.14);
+      display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;
+      font-size:20px;
+    }
+    h1{margin:0;font-size:20px}
+    p.lead{margin:0;color:var(--muted);font-size:14px}
+
+    main{display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:start;}
+    @media (max-width:980px){ main{grid-template-columns:1fr} }
+
+    /* Cards */
+    .card{
+      background:var(--card);
+      border-radius:12px;
+      padding:16px;
+      box-shadow:0 6px 18px rgba(15,23,42,0.06);
+      margin-bottom:var(--gap);
+    }
+
+    .section-title{
+      display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;
+    }
+    .section-title h2{margin:0;font-size:16px}
+    .small{font-size:13px;color:var(--muted)}
+
+    /* List of places */
+    .place{
+      display:flex;gap:12px;padding:12px;border-radius:8px;border:1px solid #eef2ff;margin-bottom:10px;
+      align-items:flex-start;
+    }
+    .place .meta{font-size:13px;color:var(--muted)}
+    .place h3{margin:0;font-size:15px}
+    .badge{font-size:12px;padding:6px 8px;border-radius:999px;background:#eef2ff;color:var(--accent-dark);display:inline-block}
+
+    /* two-column details */
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media (max-width:600px){ .grid-2{grid-template-columns:1fr} }
+
+    footer{margin-top:20px;color:var(--muted);font-size:13px;text-align:center}
+    a{color:var(--accent);text-decoration:none}
+    .muted{color:var(--muted);font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">SN</div>
+        <div>
+          <h1>Saravanampatti — Local Directory</h1>
+          <p class="lead">Colleges, hospitals and medical shops compiled from your uploaded document. (source: uploaded file) </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Left column: main content -->
+      <section>
+        <article class="card">
+          <div class="section-title">
+            <h2>Colleges in Saravanampatti</h2>
+            <span class="small">List extracted from the document. :contentReference[oaicite:1]{index=1}</span>
+          </div>
+
+          <!-- College entry template -->
+          <!-- College 1 -->
+          <div class="place">
+            <div style="min-width:6px;border-radius:6px;background:linear-gradient(180deg,#0b5fff,#0846c7);width:6px"></div>
+            <div style="flex:1">
+              <h3>Kumaraguru College of Technology (KCT)</h3>
+              <div class="meta">Address: Athipalayam Rd, Chinnavedampatti, Coimbatore, Tamil Nadu 641049</div>
+              <div class="meta">Contact: 0422 266 1100 • Plus code: 3XJR+G2</div>
+              <div class="meta small">Hours: Mon–Fri 8:30am–4:50pm; Sat–Sun Closed</div>
+            </div>
+          </div>
+
+          <!-- College 2 -->
+          <div class="place">
+            <div style="min-width:6px;border-radius:6px;background:#26a69a;width:6px"></div>
+            <div style="flex:1">
+              <h3>KGiSL Institute of Technology (KiTE)</h3>
+              <div class="meta">Address: 365, near Thudiyalur Road, Saravanampatti, Coimbatore, TN 641035</div>
+              <div class="meta">Website: <a href="https://kgkite.ac.in" target="_blank" rel="noopener">kgkite.ac.in</a> • Phone: 0422 441 9999</div>
+              <div class="meta small">Hours: Mon–Fri 8:30am–5:15pm; Sat 8:30am–5:15pm; Sun Closed</div>
+            </div>
+          </div>
+
+          <!-- College 3 -->
+          <div class="place">
+            <div style="min-width:6px;border-radius:6px;background:#ffb86b;width:6px"></div>
+            <div style="flex:1">
+              <h3>KG College of Arts and Science (KG-CAS)</h3>
+              <div class="meta">Address: 365, Thudiyalur Rd, Saravanampatti, Coimbatore, TN 641035</div>
+              <div class="meta">Website: <a href="http://kgcas.com" target="_blank" rel="noopener">kgcas.com</a> • Phone: 090952 22222</div>
+              <div class="meta small">Hours: Mon–Fri & Sat 9:30am–5:30pm; Sun Closed</div>
+            </div>
+          </div>
+
+          <!-- Continue with remaining colleges (shortened view for readability) -->
+          <div style="margin-top:8px;">
+            <!-- Collapsible / continued list represented as structured entries -->
+            <div class="place">
+              <div style="min-width:6px;border-radius:6px;background:#ff7a7a;width:6px"></div>
+              <div style="flex:1">
+                <h3>Sankara College of Science and Commerce</h3>
+                <div class="meta">Thudiyalur Rd, Saravanampatti, Coimbatore, TN 641035 • Phone: 092117 12345</div>
+                <div class="meta small">Hours: Mon–Sat 9:00am–5:30pm; Sun Closed</div>
+              </div>
+            </div>
+
+            <div class="place">
+              <div style="min-width:6px;border-radius:6px;background:#9b7cff;width:6px"></div>
+              <div style="flex:1">
+                <h3>PPG Institute of Technology</h3>
+                <div class="meta">Rathnagiri Road, Viswapuram, Saravanampatti, Coimbatore, TN 641035</div>
+                <div class="meta">Website: <a href="https://ppgit.in/" target="_blank" rel="noopener">ppgit.in</a> • Phone: 09047777277</div>
+                <div class="meta small">Hours: Mon–Sat 9am–5pm; Sun Closed</div>
+              </div>
+            </div>
+
+            <div class="place">
+              <div style="min-width:6px;border-radius:6px;background:#6ec6ff;width:6px"></div>
+              <div style="flex:1">
+                <h3>PPG College of Arts & Science</h3>
+                <div class="meta">PPG Block C, Way to PPG Main Block, Viswapuram, Saravanampatti, Coimbatore</div>
+                <div class="meta">Website: <a href="https://www.ppg.edu.in/arts/" target="_blank" rel="noopener">ppg.edu.in/arts</a></div>
+                <div class="meta small">Hours (document lists): 9am–5am — please verify actual hours as this looks like a typo in the source. :contentReference[oaicite:2]{index=2}</div>
+              </div>
+            </div>
+
+            <div class="place">
+              <div style="min-width:6px;border-radius:6px;background:#c7f9cc;width:6px"></div>
+              <div style="flex:1">
+                <h3>PPG Business School</h3>
+                <div class="meta">PPG B BLOCK, 209, Vilankurichi Road, Viswapuram, Saravanampatti • Phone: 09047777077</div>
+                <div class="meta small">Hours: Mon–Sat 9am–5pm</div>
+              </div>
+            </div>
+
+            <div class="place">
+              <div style="min-width:6px;border-radius:6px;background:#ffd6f0;width:6px"></div>
+              <div style="flex:1">
+                <h3>K G College of Nursing</h3>
+                <div class="meta">366, 1, Thudiyalur Rd, Saravanampatti • Website: <a href="http://www.kghospital.com/" target="_blank" rel="noopener">kghospital.com</a> • Phone: 0422 2212121</div>
+              </div>
+            </div>
+
+            <div class="place">
+              <div style="min-width:6px;border-radius:6px;background:#ffe7a3;width:6px"></div>
+              <div style="flex:1">
+                <h3>K G Engineering College</h3>
+                <div class="meta">450, Thudiyalur Rd, near Mosque, Saravanampatti • Website: <a href="https://www.kgkite.ac.in/" target="_blank" rel="noopener">kgkite.ac.in</a> • Phone: 04222666187</div>
+                <div class="meta small">Hours: Mon–Sat 9:30am–5pm</div>
+              </div>
+            </div>
+
+            <div class="place">
+              <div style="min-width:6px;border-radius:6px;background:#cfe3ff;width:6px"></div>
+              <div style="flex:1">
+                <h3>K G College of Physiotherapy</h3>
+                <div class="meta">346, Thudiyalur Rd, Saravanampatti • Phone: 04224042121</div>
+                <div class="meta small">Hours: Mon–Sat ~9:10am–5pm; Sun Closed</div>
+              </div>
+            </div>
+
+            <div class="place">
+              <div style="min-width:6px;border-radius:6px;background:#d6ffd6;width:6px"></div>
+              <div style="flex:1">
+                <h3>PPG College of Physiotherapy</h3>
+                <div class="meta">No 9/1, Keeranatham Rd, VKV Kumaraguru Nagar, Saravanampatti • Phone: 09843930200</div>
+                <div class="meta small">Hours: Mon–Sat 9am–5pm</div>
+              </div>
+            </div>
+
+            <div class="place">
+              <div style="min-width:6px;border-radius:6px;background:#f0d6ff;width:6px"></div>
+              <div style="flex:1">
+                <h3>Lisieux College of Education</h3>
+                <div class="meta">No.203, Viswasapuram, Saravanampatti • Website: <a href="https://www.lisieuxcollegeofeducation.in/" target="_blank" rel="noopener">lisieuxcollegeofeducation.in</a> • Phone: 08903405850</div>
+                <div class="meta small">Hours: Mon–Fri 9:30am–4:30pm; Sat 9:30am–12:30pm</div>
+              </div>
+            </div>
+
+            <div class="place">
+              <div style="min-width:6px;border-radius:6px;background:#ffd9d9;width:6px"></div>
+              <div style="flex:1">
+                <h3>SNS College of Technology</h3>
+                <div class="meta">SNS Kalvi Nagar, Sathy Main Road, NH-209, Vazhiyampalayam, Saravanampatti • Phone: 08903405850</div>
+                <div class="meta small">Hours: Mon–Fri 8:45am–4:45pm; Sat & Sun Closed</div>
+              </div>
+            </div>
+
+            <div class="place">
+              <div style="min-width:6px;border-radius:6px;background:#e6f4ff;width:6px"></div>
+              <div style="flex:1">
+                <h3>Dr. SNS Rajalakshmi College of Arts and Science</h3>
+                <div class="meta">486 Thudiyalur - Saravanampatti Road, Chinnavedampatti, Coimbatore • Phone: 07530093725</div>
+                <div class="meta small">Hours: Daily 9:15am–3:00pm (Sat included); Sun Closed</div>
+              </div>
+            </div>
+
+            <div class="place">
+              <div style="min-width:6px;border-radius:6px;background:#fff2cc;width:6px"></div>
+              <div style="flex:1">
+                <h3>Sankara Polytechnic College</h3>
+                <div class="meta">College Rd, Saravanampatti • Founded 1983 • Enrollment: 946 (2025) • Phone: 0422 431 3555</div>
+                <div class="meta small">Hours: Mon–Fri 9:30am–4:30pm; Sat 9:30am–4pm; Sun Closed</div>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- Hospitals & Medical -->
+        <article class="card">
+          <div class="section-title">
+            <h2>Hospitals & Clinics</h2>
+            <span class="small">Summary list (from the document). :contentReference[oaicite:3]{index=3}</span>
+          </div>
+
+          <p class="muted">The source lists many hospitals in Saravanampatti and surrounding areas (Justdial, Practo snippets included). Below are a few named examples mentioned in the document.</p>
+
+          <div class="place">
+            <div style="min-width:6px;border-radius:6px;background:#ff9f43;width:6px"></div>
+            <div style="flex:1">
+              <h3>Dr. Muthus MultiSpeciality Hospital</h3>
+              <div class="meta">3-B, Sathy Rd, near Federal Bank • Open 24 hours • Phone (document): 070946 14000</div>
+            </div>
+          </div>
+
+          <div class="place">
+            <div style="min-width:6px;border-radius:6px;background:#6c5ce7;width:6px"></div>
+            <div style="flex:1">
+              <h3>GEETHASREE HOSPITALS</h3>
+              <div class="meta">103, Sathy Rd, near Kalapatti Pirivu • Open 24 hours • Phone (document): 094896 75511</div>
+            </div>
+          </div>
+
+          <div class="place">
+            <div style="min-width:6px;border-radius:6px;background:#00b894;width:6px"></div>
+            <div style="flex:1">
+              <h3>Kumaran Medical Center</h3>
+              <div class="meta">499/500, near Saravanampatti • Phone: 0422 222 6222 (Open 24 hours)</div>
+            </div>
+          </div>
+
+          <p class="small">For a fuller list of 61+ hospitals referenced in the document, the original sources (Justdial / Practo) were listed in the file. :contentReference[oaicite:4]{index=4}</p>
+        </article>
+
+        <article class="card">
+          <div class="section-title">
+            <h2>Medical & Pharmacies</h2>
+            <span class="small">Pharmacies and medical shops pulled from your file. :contentReference[oaicite:5]{index=5}</span>
+          </div>
+
+          <div class="grid-2">
+            <div>
+              <div class="place">
+                <div style="min-width:6px;border-radius:6px;background:#74b9ff;width:6px"></div>
+                <div style="flex:1">
+                  <h3>Wellness Pharmacy</h3>
+                  <div class="meta">Kalapatti, 159, Sathy Rd, Saravanampatti • Phone: 09943188833</div>
+                  <div class="meta small">Hours (document): Daily 7:30am–11:00pm</div>
+                </div>
+              </div>
+
+              <div class="place">
+                <div style="min-width:6px;border-radius:6px;background:#ff7675;width:6px"></div>
+                <div style="flex:1">
+                  <h3>Apollo Pharmacy (Sathy Road)</h3>
+                  <div class="meta">4, Sathy Rd, Thiruvannamail Nagar, Saravanampatti • Phone: 07947479007</div>
+                  <div class="meta small">Hours: Daily 7am–11pm</div>
+                </div>
+              </div>
+
+              <div class="place">
+                <div style="min-width:6px;border-radius:6px;background:#55efc4;width:6px"></div>
+                <div style="flex:1">
+                  <h3>Pudhumaii Pharmacies</h3>
+                  <div class="meta">95/1C, Sathy Rd • Phone: 09047481115</div>
+                  <div class="meta small">Hours: Daily ~8am–10pm (Sun 9am–8pm)</div>
+                </div>
+              </div>
+
+            </div>
+
+            <div>
+              <div class="place">
+                <div style="min-width:6px;border-radius:6px;background:#a29bfe;width:6px"></div>
+                <div style="flex:1">
+                  <h3>Med One Pharmacy & Clinic</h3>
+                  <div class="meta">Thudiyalur - Saravanampatti Rd • Phone: 08668000698</div>
+                  <div class="meta small">Hours: Daily 9am–11pm</div>
+                </div>
+              </div>
+
+              <div class="place">
+                <div style="min-width:6px;border-radius:6px;background:#ffeaa7;width:6px"></div>
+                <div style="flex:1">
+                  <h3>LA Pharmacy</h3>
+                  <div class="meta">VG Complex, Thudiyalur Rd • Phone: 09444665252</div>
+                  <div class="meta small">Hours: Daily 8:30am–11pm</div>
+                </div>
+              </div>
+
+              <div class="place">
+                <div style="min-width:6px;border-radius:6px;background:#fab1a0;width:6px"></div>
+                <div style="flex:1">
+                  <h3>Apollo Pharmacy (Saravanampatti - alternate)</h3>
+                  <div class="meta">Ground Floor, Saravanampatti - Kalapatti Rd, FCI Nagar, Villankurichi • Phone: 07947479005</div>
+                  <div class="meta small">Hours: Daily 7am–11pm</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="small" style="margin-top:8px">Many other medical shops and smaller clinics are listed in the document (e.g., MJ MEDICALS, Shree Medicals, Amman Medicals, Sri Raghavendra Medicals, Meenakshi Medicals, Ramana Medical Centre, Pasumai pharmacy, Sree Amman Medicals, Sri Vari Medicals). See the full source for details. :contentReference[oaicite:6]{index=6}</p>
+        </article>
+
+        <article class="card">
+          <div class="section-title">
+            <h2>Technical note included in document</h2>
+            <span class="small">Short explanatory paragraph on recognition technologies. :contentReference[oaicite:7]{index=7}</span>
+          </div>
+
+          <p class="muted">The uploaded file also contained a brief informative paragraph about face, iris, and fingerprint recognition technologies — definitions and uses in security and law enforcement contexts. That text is preserved in the original file. :contentReference[oaicite:8]{index=8}</p>
+        </article>
+      </section>
+
+      <!-- Right column: sidebar -->
+      <aside>
+        <div class="card">
+          <h2>Quick navigation</h2>
+          <ul style="padding-left:16px;">
+            <li><a href="#colleges">Colleges</a></li>
+            <li><a href="#hospitals">Hospitals</a></li>
+            <li><a href="#medical">Pharmacies</a></li>
+            <li><a href="#tech">Face/Iris/Fingerprint</a></li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Notes / Warnings</h2>
+          <p class="small">I preserved the content as found in your uploaded file. A few entries in the source appear to contain typos or inconsistent hours (for example “9am–5am” for PPG College of Arts & Science). Please verify any critical contact details or timings before using them publicly. :contentReference[oaicite:9]{index=9}</p>
+        </div>
+
+        <div class="card">
+          <h2>Download</h2>
+          <p class="small">If you'd like, I can:
+            <ul>
+              <li>Export this page as a ready-to-serve HTML file</li>
+              <li>Create a printable PDF version</li>
+            </ul>
+            (tell me which one and I will prepare it in this session)
+          </p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      Converted from uploaded file. If you want different styling, grouping, or more compact tables instead of cards, tell me which format you prefer. :contentReference[oaicite:10]{index=10}
+    </footer>
+  </div>
+</body>
+</html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Saravanampatti — Colleges, Hospitals & Medical Listings</title>
+  <style>
+    :root{
+      --bg:#f6f7fb;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent:#0b5fff;
+      --accent-dark:#0846c7;
+      --gap:16px;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg),#eef2ff);
+      color:#111827;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:24px;
+    }
+    .container{max-width:1100px;margin:0 auto;}
+    header{display:flex;gap:16px;align-items:center;margin-bottom:20px;}
+    header .brand{display:flex;gap:12px;align-items:center;}
+    .logo{width:64px;height:64px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-dark));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:20px;}
+    h1{margin:0;font-size:20px}
+    p.lead{margin:0;color:var(--muted);font-size:14px}
+    main{display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:start;}
+    @media (max-width:980px){ main{grid-template-columns:1fr} }
+    .card{background:var(--card);border-radius:12px;padding:16px;box-shadow:0 6px 18px rgba(15,23,42,0.06);margin-bottom:var(--gap);}
+    .section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}
+    .section-title h2{margin:0;font-size:16px}
+    .small{font-size:13px;color:var(--muted)}
+    footer{margin-top:20px;color:var(--muted);font-size:13px;text-align:center}
+    a{color:var(--accent);text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">SN</div>
+        <div>
+          <h1>Saravanampatti — Local Directory</h1>
+          <p class="lead">Colleges, hospitals and medical shops compiled from your uploaded document.</p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Existing content (Colleges, Hospitals, Pharmacies, etc.) -->
+
+      <!-- NEW Section: Face, Iris, Fingerprint -->
+      <article class="card">
+        <div class="section-title">
+          <h2>Face, Iris, and Fingerprint Recognition</h2>
+        </div>
+        <p>
+          Face, iris, and fingerprint recognition are technologies that involve the use of algorithms and specialized software to identify and analyse facial features, iris patterns, and fingerprints in order to identify individuals or determine their involvement in a crime. These technologies are often used to help identify suspects or to confirm the identity of individuals in cases where traditional methods, such as eyewitness testimony, may be unreliable.
+        </p>
+        <ul>
+          <li><strong>Face recognition:</strong> Face recognition is a technology that involves the use of algorithms and specialized software to analyse the unique characteristics of an individual's face in order to identify them. This may involve analyzing the shape, size, and placement of facial features, such as the eyes, nose, and mouth. Face recognition technology is often used to identify individuals in security or surveillance applications, such as border control or access control.</li>
+          <li><strong>Iris recognition:</strong> Iris recognition is a technology that involves the use of algorithms and specialized software to analyze the unique patterns in an individual's iris, the coloured part of the eye, in order to identify them. This technology is often used in security applications, such as border control or access control, as the iris is relatively stable and does not change over time.</li>
+          <li><strong>Fingerprint recognition:</strong> Fingerprint recognition is a technology that involves the use of algorithms and specialized software to analyze the unique patterns in an individual's fingerprints in order to identify them. Fingerprint recognition technology is often used in law enforcement and security applications to help identify individuals or confirm their identity.</li>
+        </ul>
+      </article>
+    </main>
+
+    <footer>
+      Converted from uploaded file. Extra section on biometric recognition added.
+    </footer>
+  </div>
+</body>
+</html>
